@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naya — WhatsApp Chat Mockups</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .mockup-badge {
+    background: #ff4757;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  h1 { font-size: 22px; text-align: center; margin-bottom: 8px; color: #1a1a2e; }
+  .page-sub { font-size: 14px; text-align: center; color: #666; margin-bottom: 32px; }
+  
+  .scenario-label {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .scenario-desc {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+  
+  .phone-frame {
+    max-width: 375px;
+    margin: 0 auto 48px;
+    background: #000;
+    border-radius: 36px;
+    padding: 12px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  }
+  .phone-screen {
+    background: #e5ddd5;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  
+  .status-bar {
+    background: #075e54;
+    color: #fff;
+    padding: 8px 16px 4px;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wa-header {
+    background: #075e54;
+    color: #fff;
+    padding: 8px 12px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .wa-header .back { font-size: 18px; opacity: 0.8; }
+  .wa-header .avatar {
+    width: 34px; height: 34px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+  }
+  .wa-header .contact-info { flex: 1; }
+  .wa-header .contact-name { font-size: 15px; font-weight: 600; }
+  .wa-header .contact-status { font-size: 11px; opacity: 0.8; }
+  .wa-header .icons { display: flex; gap: 16px; font-size: 16px; opacity: 0.8; }
+  
+  .wa-messages {
+    padding: 12px;
+    min-height: 400px;
+  }
+  
+  .date-divider {
+    text-align: center;
+    margin: 8px 0 12px;
+  }
+  .date-divider span {
+    background: #e1f3fb;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #555;
+  }
+  
+  .msg {
+    max-width: 78%;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+    clear: both;
+  }
+  .msg.in {
+    background: #fff;
+    float: left;
+    border-top-left-radius: 0;
+  }
+  .msg.out {
+    background: #dcf8c6;
+    float: right;
+    border-top-right-radius: 0;
+  }
+  .msg .meta {
+    font-size: 10px;
+    color: #999;
+    text-align: right;
+    margin-top: 2px;
+  }
+  .msg .meta .check { color: #53bdeb; }
+  .msg .ai-tag {
+    display: inline-block;
+    font-size: 9px;
+    background: #667eea;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 6px;
+    margin-bottom: 3px;
+  }
+  
+  .clearfix::after { content: ""; display: table; clear: both; }
+  
+  .wa-input {
+    background: #f0f0f0;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .wa-input .input-field {
+    flex: 1;
+    background: #fff;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 13px;
+    color: #999;
+  }
+  .wa-input .send-btn {
+    width: 36px; height: 36px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+  }
+  
+  .annotation {
+    max-width: 375px;
+    margin: -32px auto 48px;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 12px;
+    color: #856404;
+    line-height: 1.5;
+  }
+  .annotation strong { color: #664d03; }
+</style>
+</head>
+<body>
+
+<div class="mockup-badge">📐 MOCKUP — WhatsApp Chat Scenarios — Naya (Phase 0)</div>
+
+<h1>Naya — WhatsApp Chat Mockups</h1>
+<p class="page-sub">Contoh percakapan Naya dengan calon klien vendor wedding</p>
+
+<!-- SCENARIO 1: PHOTOGRAPHER -->
+<div class="scenario-label">Skenario 1 — Fotografer Wedding</div>
+<div class="scenario-desc">Calon klien tanya ketersediaan tanggal, malam hari. Naya respons instan.</div>
+
+<div class="phone-frame">
+  <div class="phone-screen">
+    <div class="status-bar">
+      <span>23:47</span>
+      <span>📶 🔋 85%</span>
+    </div>
+    <div class="wa-header">
+      <span class="back">←</span>
+      <div class="avatar">📸</div>
+      <div class="contact-info">
+        <div class="contact-name">Andi Foto Wedding</div>
+        <div class="contact-status">✨ Naya aktif</div>
+      </div>
+      <div class="icons">📞 ⋮</div>
+    </div>
+    <div class="wa-messages clearfix">
+      <div class="date-divider"><span>Hari ini</span></div>
+      
+      <div class="msg in">
+        Kak, untuk foto wedding bulan Agustus masih ada slot?
+        <div class="meta">23:47</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Halo! 👋 Saya Naya, asisten dari Andi Foto Wedding. Untuk tanggal berapa di bulan Agustus, Kak? Saya cek ketersediaannya sekarang ya~
+        <div class="meta">23:47 <span class="check">✓✓</span></div>
+      </div>
+      
+      <div class="msg in">
+        Tanggal 16 Agustus 2025
+        <div class="meta">23:48</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Tanggal 16 Agustus masih tersedia! 🎉<br><br>
+        Untuk paket lengkap wedding photography mulai dari Rp 8jt. Include:<br>
+        📷 Foto akad + resepsi<br>
+        🎬 Video highlight 3 menit<br>
+        💾 Semua file digital<br><br>
+        Mau saya kirimkan detail paket dan portofolionya, Kak?
+        <div class="meta">23:48 <span class="check">✓✓</span></div>
+      </div>
+      
+      <div class="msg in">
+        Boleh kak! Kirim ya 🙏
+        <div class="meta">23:49</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Siap, Kak! 📋 Saya kirimkan proposal + portofolio ya. Kalau ada pertanyaan lain, langsung chat aja kapan saja! 😊
+        <div class="meta">23:49 <span class="check">✓✓</span></div>
+      </div>
+    </div>
+    <div class="wa-input">
+      <span>😊</span>
+      <div class="input-field">Ketik pesan...</div>
+      <div class="send-btn">🎤</div>
+    </div>
+  </div>
+</div>
+
+<div class="annotation">
+  <strong>📌 Catatan:</strong> Percakapan terjadi jam 23:47 malam — saat fotografer biasanya sudah tidur atau editing. 
+  Naya tetap respons instan, menjaga leads tetap hangat. Tanpa Naya, calon klien ini mungkin sudah chat fotografer lain yang lebih responsif.
+</div>
+
+<!-- SCENARIO 2: WEDDING ORGANIZER -->
+<div class="scenario-label">Skenario 2 — Wedding Organizer</div>
+<div class="scenario-desc">Calon klien tanya harga paket WO untuk 200 tamu.</div>
+
+<div class="phone-frame">
+  <div class="phone-screen">
+    <div class="status-bar">
+      <span>14:23</span>
+      <span>📶 🔋 62%</span>
+    </div>
+    <div class="wa-header">
+      <span class="back">←</span>
+      <div class="avatar">💍</div>
+      <div class="contact-info">
+        <div class="contact-name">Sekar Wedding Organizer</div>
+        <div class="contact-status">✨ Naya aktif</div>
+      </div>
+      <div class="icons">📞 ⋮</div>
+    </div>
+    <div class="wa-messages clearfix">
+      <div class="date-divider"><span>Hari ini</span></div>
+      
+      <div class="msg in">
+        Harga paket WO untuk 200 tamu berapa ya?
+        <div class="meta">14:23</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Halo Kak! 👋 Saya Naya, asisten dari Sekar Wedding Organizer. 😊<br><br>
+        Untuk resepsi 200 tamu, paket kami mulai dari <strong>Rp 25jt</strong> sudah include:<br><br>
+        👰 Koordinator hari H<br>
+        📋 Vendor management<br>
+        📝 Rundown acara lengkap<br>
+        🎪 Setup & dekorasi koordinasi<br><br>
+        Boleh minta nomor WA aktif untuk kirim proposal lengkapnya? 😊
+        <div class="meta">14:23 <span class="check">✓✓</span></div>
+      </div>
+      
+      <div class="msg in">
+        Ini WA aktif kak. Bisa kirim ke sini aja
+        <div class="meta">14:24</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Siap, Kak! 📎 Saya kirimkan proposal lengkap + foto-foto event sebelumnya ya.<br><br>
+        Oh iya, rencana wedding-nya kapan Kak? Biar saya cek ketersediaan tim kami 🗓️
+        <div class="meta">14:24 <span class="check">✓✓</span></div>
+      </div>
+      
+      <div class="msg in">
+        Rencananya Maret 2026 kak
+        <div class="meta">14:25</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Maret 2026, noted! ✅ Alhamdulillah masih banyak slot tersedia untuk bulan itu.<br><br>
+        Saya akan sampaikan ke Kak Sekar langsung untuk follow up lebih detail. Biasanya beliau akan hubungi dalam 1x24 jam ya 🙏
+        <div class="meta">14:25 <span class="check">✓✓</span></div>
+      </div>
+    </div>
+    <div class="wa-input">
+      <span>😊</span>
+      <div class="input-field">Ketik pesan...</div>
+      <div class="send-btn">🎤</div>
+    </div>
+  </div>
+</div>
+
+<div class="annotation">
+  <strong>📌 Catatan:</strong> Chat masuk jam 14:23 — saat WO biasanya sedang meeting atau di venue. 
+  Naya handle inquiry awal, kumpulkan info penting (jumlah tamu, tanggal), lalu handover ke pemilik WO untuk follow up personal.
+  Leads tidak hilang meski WO sedang sibuk.
+</div>
+
+<!-- SCENARIO 3: MUA LATE NIGHT -->
+<div class="scenario-label">Skenario 3 — MUA (Makeup Artist)</div>
+<div class="scenario-desc">Inquiry masuk larut malam. Naya tetap respons — leads tetap aman.</div>
+
+<div class="phone-frame">
+  <div class="phone-screen">
+    <div class="status-bar">
+      <span>23:47</span>
+      <span>📶 🔋 31%</span>
+    </div>
+    <div class="wa-header">
+      <span class="back">←</span>
+      <div class="avatar">💄</div>
+      <div class="contact-info">
+        <div class="contact-name">Rina MUA Bridal</div>
+        <div class="contact-status">✨ Naya aktif</div>
+      </div>
+      <div class="icons">📞 ⋮</div>
+    </div>
+    <div class="wa-messages clearfix">
+      <div class="date-divider"><span>Hari ini</span></div>
+      
+      <div class="msg in">
+        Kak ada slot makeup akad 3 Januari gak?
+        <div class="meta">23:47</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Halo! 👋 Saya Naya, asisten dari Rina MUA Bridal. Untuk tanggal 3 Januari masih tersedia ya, Kak! 😊<br><br>
+        Untuk makeup akad nikah, kira-kira mulai dari jam berapa Kak? Biar saya bantu cek jadwal artistnya~
+        <div class="meta">23:47 <span class="check">✓✓</span></div>
+      </div>
+      
+      <div class="msg in">
+        Akad jam 8 pagi kak, jadi mungkin mulai makeup jam 5 subuh
+        <div class="meta">23:48</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Noted, Kak! Jam 05:00 pagi untuk persiapan makeup akad jam 08:00 ✅<br><br>
+        Paket makeup akad kami mulai dari <strong>Rp 3.5jt</strong> include:<br>
+        💄 Makeup akad<br>
+        👗 Hijab do / hair do<br>
+        🌸 Touch up 1x<br><br>
+        Mau sekalian paket resepsi juga, Kak? Ada harga spesial untuk paket bundling 💕
+        <div class="meta">23:48 <span class="check">✓✓</span></div>
+      </div>
+      
+      <div class="msg in">
+        Wah boleh kak, berapa harganya?
+        <div class="meta">23:49</div>
+      </div>
+      
+      <div class="msg out">
+        <div class="ai-tag">✨ Naya</div><br>
+        Untuk paket bundling akad + resepsi mulai Rp 5.5jt Kak 💕<br><br>
+        Boleh saya catat nama & tanggal wedding-nya dulu untuk booking slot ya?
+        <div class="meta">23:49 <span class="check">✓✓</span></div>
+      </div>
+    </div>
+    <div class="wa-input">
+      <span>😊</span>
+      <div class="input-field">Ketik pesan...</div>
+      <div class="send-btn">🎤</div>
+    </div>
+  </div>
+</div>
+
+<div class="annotation">
+  <strong>📌 Catatan:</strong> MUA Rina sudah tidur jam 23:47 — besok pagi harus berangkat ke venue jam 4 subuh. 
+  Tanpa Naya, chat ini baru dibales besok siang. Calon klien mungkin sudah booking MUA lain.
+  Dengan Naya, leads dijaga 24/7 bahkan saat tidur.
+</div>
+
+</body>
+</html>
