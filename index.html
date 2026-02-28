@@ -521,9 +521,10 @@
       
       fetch('https://script.google.com/macros/s/AKfycbyY0MABNaXrA0HvgFLrEGzDMDvUJJWqQGkyiRg2cX5S45OqysDehhhYCvJZLvy9d31X/exec', {
         method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify(data)
       })
-      .then(function(r) { return r.json(); })
       .then(function() {
         document.getElementById('form-success').style.display = 'block';
         document.getElementById('form-error').style.display = 'none';
